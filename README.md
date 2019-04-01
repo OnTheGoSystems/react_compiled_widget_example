@@ -5,7 +5,7 @@ It includes:
 - webpack configuration
 - yarn dependencies
 - datastores with publish/subscribe
-- routing system with localstorage persistance
+- routing system with localstorage persistence
 - sample GET and POST http services 
 - logging wrapper for JS errors transferring to server side
 - jest tests
