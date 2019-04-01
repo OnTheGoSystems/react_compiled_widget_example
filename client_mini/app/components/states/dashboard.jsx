@@ -1,32 +1,32 @@
 import React, { Component } from 'react';
 import CrwRouter from "../../routing/crw_router";
-import OrganizationStore from "../../stores/jobs_store";
+import SampleStore from "../../stores/sample_store";
 
 export default class StateDashboard extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      jobs: OrganizationStore.instance.getJobs(),
-      loaded: OrganizationStore.instance.isLoaded(),
+      values: SampleStore.instance.getValues(),
+      loaded: SampleStore.instance.isLoaded(),
       text: props.text
     };
   }
 
   componentWillMount() {
-    OrganizationStore.instance.bindJobsLoaded(`dashboard`, () => {
+    SampleStore.instance.bindValuesLoaded(`dashboard`, () => {
       this.setState({
-        jobs: OrganizationStore.instance.getJobs(),
-        loaded: OrganizationStore.instance.isLoaded()
+        values: SampleStore.instance.getValues(),
+        loaded: SampleStore.instance.isLoaded()
       })
     });
   }
 
   componentWillUnmount() {
-    OrganizationStore.instance.unbindJobsLoaded(`dashboard`);
+    SampleStore.instance.unbindValuesLoaded(`dashboard`);
   }
 
   componentDidMount() {
-    OrganizationStore.instance.loadJobs();
+    SampleStore.instance.loadValues();
   }
 
   render() {

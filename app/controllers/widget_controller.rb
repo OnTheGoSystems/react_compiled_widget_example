@@ -4,7 +4,7 @@ class WidgetController < ActionController::Base
   end
 
   def fetch
-    render json: { data: { message: 'Hello from compiled EATE React!', jobs: [1, 2, 3] } }
+    render json: { data: { message: 'Hello from compiled EATE React!', values: [1, 2, 3] } }
   end
 
   def import_logs
