@@ -1,24 +1,35 @@
-# README
+# React Compiled Widget example
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Example with react and simple FLUX configured. 
+It includes: 
+- webpack configuration
+- yarn dependencies
+- datastores with publish/subscribe
+- routing system with localstorage persistance
+- sample GET and POST http services 
+- logging wrapper for JS errors transferring to server side
+- jest tests
+- compressing settings
 
-Things you may want to cover:
+# How to run
+$ # install nodejs, yarn
 
-* Ruby version
+$ cd [app]
 
-* System dependencies
+$ bundle install 
 
-* Configuration
+$ cd client_mini 
 
-* Database creation
+$ bin/build
 
-* Database initialization
+$ cd [app]
 
-* How to run the test suite
+$ rails s -p 5555
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
+# Specific commands
+$ cd client_mini 
 
-* ...
+$ bin/compile
+
+$ bin/test
