@@ -1,4 +1,5 @@
 # React Compiled Widget example
+## Start writting your react-based app in 5 seconds without configuration hell!
 
 Example with react and simple FLUX configured. 
 It includes: 
