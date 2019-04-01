@@ -18,6 +18,8 @@
 !/tmp/.keep
 
 /node_modules
+client_mini/node_modules
+public/mini_app/*.gz
 /yarn-error.log
 
 .byebug_history

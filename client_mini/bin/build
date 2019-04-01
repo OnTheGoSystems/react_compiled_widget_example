@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo started
+
+yarn
+echo installed
+
+./bin/compile
+echo compiled
+
+./bin/test
+echo tested
+
+ruby ./bin/record_stats.rb
+echo recorded

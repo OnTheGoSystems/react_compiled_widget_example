@@ -1,0 +1,44 @@
+{
+  "name": "react-ate-app-mini",
+  "version": "0.0.1",
+  "private": true,
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "^root(.*)$": "<rootDir>app$1",
+      "^global_root(.*)$": "<rootDir>$1"
+    }
+  },
+  "scripts": {
+    "build:test": "webpack --config webpack.config.js",
+    "build:production": "webpack --mode=production --config webpack.config.js",
+    "build:development": "webpack -w --config webpack.config.js",
+    "test": "NODE_ENV=testing jest --no-cache"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "client/node_modules"
+  ],
+  "dependencies": {
+    "es5-shim": "",
+    "@babel/core": "",
+    "@babel/preset-env": "",
+    "@babel/preset-react": "",
+    "babel-loader": "",
+    "babel-preset-es2015": "",
+    "jquery": "",
+    "dateformat": "",
+    "lodash": "",
+    "react": "",
+    "react-dom": "",
+    "imports-loader": "",
+    "webpack": ""
+  },
+  "devDependencies": {
+    "babel-jest": "^16",
+    "jest": "",
+    "react-test-renderer": "",
+    "webpack-cli": "^3.3.0",
+    "webpack-command": "^0.4.2"
+  }
+}
