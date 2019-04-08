@@ -1,5 +1,5 @@
 import SampleRequest from "../services/requests/sample_request";
-import KeyEvent from "../vendor/key_event";
+import { MicroStore } from "@tarvit/micro_store";
 
 class SampleStore {
   constructor() {
@@ -43,7 +43,7 @@ class SampleStore {
   }
 }
 
-KeyEvent.mixin(SampleStore);
+MicroStore.mixin(SampleStore);
 
 SampleStore.instance = new SampleStore();
 global.SampleStore = SampleStore;

@@ -1,8 +1,8 @@
-import StateLocalStorageRouter from "../vendor/state_local_storage_router";
 import StateDashboard from "../components/states/dashboard";
 import StateNotification from "../components/states/notification";
 
-const CrwRouter = new StateLocalStorageRouter();
+import { MicroRouter } from "@tarvit/micro_router";
+const CrwRouter = new MicroRouter();
 
 // TODO: replace with real routes
 CrwRouter.setDefaultRoute('notification/example');
