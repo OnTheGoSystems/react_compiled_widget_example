@@ -20,8 +20,8 @@
     "client/node_modules"
   ],
   "dependencies": {
-    "@tarvit/micro_router": "0.0.16",
-    "@tarvit/micro_store": "0.0.1",
+    "@tarvit/micro_router": "1.0.2",
+    "@tarvit/micro_store": "1.0.0",
     "es5-shim": "",
     "@babel/core": "",
     "@babel/preset-env": "",

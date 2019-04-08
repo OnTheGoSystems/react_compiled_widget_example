@@ -714,13 +714,13 @@
     "@types/istanbul-lib-coverage" "^1.1.0"
     "@types/yargs" "^12.0.9"
 
-"@tarvit/micro_router@0.0.16":
-  version "0.0.16"
-  resolved "https://registry.yarnpkg.com/@tarvit/micro_router/-/micro_router-0.0.16.tgz#1c1c804c80f4b9962f4b5d3d54e086c29186e4c5"
+"@tarvit/micro_router@1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@tarvit/micro_router/-/micro_router-1.0.2.tgz#f7276add2fc4cc0f2282f08b4d648c3d09dde8f6"
 
-"@tarvit/micro_store@0.0.1":
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/@tarvit/micro_store/-/micro_store-0.0.1.tgz#52aa505164b40ee63bfcee1cda7c8d6950d704bd"
+"@tarvit/micro_store@1.0.0":
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/@tarvit/micro_store/-/micro_store-1.0.0.tgz#1ffbca383a7bb3983dd292ad8938b2b447c2c46b"
 
 "@types/babel__core@^7.1.0":
   version "7.1.0"

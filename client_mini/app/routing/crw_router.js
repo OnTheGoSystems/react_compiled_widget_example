@@ -3,6 +3,7 @@ import StateNotification from "../components/states/notification";
 
 import { MicroRouter } from "@tarvit/micro_router";
 const CrwRouter = new MicroRouter();
+CrwRouter.logsEnabled = true;
 
 // TODO: replace with real routes
 CrwRouter.setDefaultRoute('notification/example');
