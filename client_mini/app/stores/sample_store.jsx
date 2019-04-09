@@ -23,8 +23,7 @@ class SampleStore {
     const req = SampleRequest.load(page);
     req.then((response)=> {
       const json = JSON.parse(response);
-      this.state.data.loaded = true;
-      this.state.data.values = json.data.values;
+      setValues(json.data.values)
     });
   }
 

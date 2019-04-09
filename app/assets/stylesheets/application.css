@@ -14,8 +14,8 @@
  *= require_self
  */
  .app_root_container {
-    margin: '20px';
-    background: 'rgb(201, 255, 157)';
-    color: '#14631b';
-    padding: '20px';
+    margin: 20px;
+    background: rgb(201, 255, 157);
+    color: #14631b;
+    padding: 20px
  }
