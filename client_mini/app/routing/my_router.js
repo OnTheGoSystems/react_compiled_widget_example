@@ -2,21 +2,21 @@ import StateDashboard from "../components/states/dashboard";
 import StateNotification from "../components/states/notification";
 
 import { MicroRouter } from "@tarvit/micro_router";
-const CrwRouter = new MicroRouter();
-CrwRouter.logsEnabled = true;
+const MyRouter = new MicroRouter();
+MyRouter.logsEnabled = true;
 
-CrwRouter.setDefaultRoute('notification/example');
-CrwRouter.addRoute('dashboard', StateDashboard);
-CrwRouter.addRoute('notification/:text', StateNotification);
+MyRouter.setDefaultRoute('notification/example');
+MyRouter.addRoute('dashboard', StateDashboard);
+MyRouter.addRoute('notification/:text', StateNotification);
 
-CrwRouter.nav = {
+MyRouter.nav = {
   toDashboard: () => {
-    CrwRouter.navigate({ view: StateDashboard});
+    MyRouter.navigate({ view: StateDashboard});
   },
   toNotification: (message) => {
-    CrwRouter.navigate({ view: StateNotification, text: message})
+    MyRouter.navigate({ view: StateNotification, text: message})
   }
 };
 
-global.CrwRouter = CrwRouter;
-export default CrwRouter;
+global.MyRouter = MyRouter;
+export default MyRouter;
