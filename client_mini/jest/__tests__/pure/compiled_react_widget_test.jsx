@@ -1,5 +1,4 @@
 'use strict';
-require('global_root/jest/__support__/config');
 
 import CompiledReactWidget from 'root/compiled_react_widget';
 

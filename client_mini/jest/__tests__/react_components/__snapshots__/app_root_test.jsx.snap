@@ -3,14 +3,6 @@
 exports[`AppRoot #render 1`] = `
 <div
   className="app_root_container"
-  style={
-    Object {
-      "background": "rgb(201, 255, 157)",
-      "color": "#14631b",
-      "margin": "20px",
-      "padding": "20px",
-    }
-  }
 >
   <h1>
     Compiled react widget

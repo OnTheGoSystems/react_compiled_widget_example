@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CrwRouter from "../../routing/crw_router";
+import MyRouter from "../../routing/my_router";
 import SampleStore from "../../stores/sample_store";
 
 export default class StateDashboard extends Component {
@@ -34,7 +34,7 @@ export default class StateDashboard extends Component {
       <div>
         <h3>Dashboard</h3>
         <p>
-          <button onClick={()=>{ CrwRouter.nav.toNotification('Sample number = ' + Math.random()) }}>
+          <button onClick={()=>{ MyRouter.nav.toNotification('Sample number = ' + Math.random()) }}>
             To Notification View
           </button>
         </p>

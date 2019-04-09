@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CrwRouter from "../../routing/crw_router";
+import MyRouter from "../../routing/my_router";
 
 export default class StateNotification extends Component {
   constructor(props) {
@@ -22,7 +22,7 @@ export default class StateNotification extends Component {
       <div>
         <h3>Notification</h3>
         <p>
-          <button onClick={()=>{ CrwRouter.nav.toDashboard() }}> To Dashboard </button>
+          <button onClick={()=>{ MyRouter.nav.toDashboard() }}> To Dashboard </button>
         </p>
         <p>
           { this.state.text }

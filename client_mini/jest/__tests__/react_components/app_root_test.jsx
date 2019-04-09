@@ -1,5 +1,4 @@
 'use strict';
-require('global_root/jest/__support__/config');
 
 import React from 'react';
 import AppRoot from 'root/components/app_root';
